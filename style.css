@@ -652,3 +652,152 @@ footer p {
     }
 
 }
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <div class="logo">NESTORA</div>
+            <p>
+                Thoughtful interiors designed around
+                the way you live and work.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Explore</h3>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Studio</h3>
+            <a href="#why-nestora">Why Nestora</a>
+            <a href="#process">Our Process</a>
+            <a href="#contact">Consultation</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>hello@nestora.example</p>
+            <p>Chhatrapati Sambhaji Nagar, India</p>
+            <p>Mon – Sat · 10 AM – 6 PM</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            © 2026 Nestora Interior Design Studio.
+            Demo website for educational purposes.
+        </p>
+        <p>Designed with thoughtful details.</p>
+    </div>
+</footer>
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    background: #453d35;
+    color: #eee8df;
+    padding: 65px 30px 25px;
+}
+
+.footer-container {
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+    gap: 50px;
+}
+
+.footer-brand .logo {
+    color: #f4eee6;
+    margin-bottom: 18px;
+}
+
+.footer-brand p {
+    max-width: 260px;
+    color: #cfc5b9;
+    font-size: 14px;
+}
+
+.footer-links,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-weight: 400;
+    color: #f4eee6;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #cfc5b9;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    padding-left: 4px;
+}
+
+.footer-contact p {
+    color: #cfc5b9;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    max-width: 1140px;
+    margin: 55px auto 0;
+    padding-top: 22px;
+    border-top: 1px solid #62584e;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-bottom p {
+    color: #bdb2a6;
+    font-size: 12px;
+}
+
+
+/* FOOTER - MOBILE */
+
+@media (max-width: 768px) {
+
+    footer {
+        padding: 55px 30px 25px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 25px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+}

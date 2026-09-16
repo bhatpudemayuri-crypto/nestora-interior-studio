@@ -317,39 +317,99 @@
 
 </section>
         <!-- Contact Section -->
-        <section id="contact" class="contact">
+<section id="contact" class="contact">
 
-            <p class="section-label">GET IN TOUCH</p>
+    <div class="contact-content">
 
-            <h2>
-                Let's create your space.
-            </h2>
+        <div class="contact-info">
+
+            <p class="section-label">START A PROJECT</p>
+
+            <h2>Let's create your space.</h2>
 
             <p>
-                Have a project in mind? Tell us about it.
+                Tell us a little about your project and our design team
+                will get in touch to discuss your ideas, requirements
+                and possibilities.
             </p>
 
-            <a href="mailto:hello@nestora.example" class="btn">
-                Start a Conversation
-            </a>
+            <div class="contact-details">
 
-        </section>
+                <div>
+                    <span>EMAIL</span>
+                    <p>hello@nestora.example</p>
+                </div>
 
-    </main>
+                <div>
+                    <span>LOCATION</span>
+                    <p>Chhatrapati Sambhaji Nagar, India</p>
+                </div>
 
+                <div>
+                    <span>WORKING HOURS</span>
+                    <p>Monday – Saturday · 10:00 AM – 6:00 PM</p>
+                </div>
 
-    <!-- Footer -->
-    <footer>
+            </div>
 
-        <div class="logo">
-            NESTORA
         </div>
 
-        <p>
-            © 2026 Nestora Interior Design Studio. Demo website for educational purposes.
-        </p>
 
-    </footer>
+        <form class="contact-form">
 
-</body>
-</html>
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="project">Project Type</label>
+
+                <select id="project" name="project">
+                    <option value="">Select a project type</option>
+                    <option value="residential">Residential Interior</option>
+                    <option value="commercial">Commercial Interior</option>
+                    <option value="space-planning">Space Planning</option>
+                    <option value="consultation">Design Consultation</option>
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <label for="message">Tell Us About Your Project</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Tell us about your space and what you have in mind..."
+                ></textarea>
+
+            </div>
+
+            <button type="submit" class="btn">
+                Request Consultation
+            </button>
+
+        </form>
+
+    </div>
+
+</section>

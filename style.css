@@ -537,3 +537,118 @@ footer p {
     }
 
 }
+/* ================================
+   CONTACT / CONSULTATION
+================================ */
+
+.contact {
+    max-width: none;
+    padding: 110px 30px;
+    background: #f2ede5;
+}
+
+.contact-content {
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 90px;
+    align-items: start;
+}
+
+.contact-info h2 {
+    margin-bottom: 25px;
+}
+
+.contact-info > p:not(.section-label) {
+    max-width: 500px;
+    color: #70675e;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.contact-details {
+    display: grid;
+    gap: 25px;
+}
+
+.contact-details span {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #9a8065;
+}
+
+.contact-details p {
+    margin-top: 5px;
+    color: #554c43;
+    font-size: 14px;
+}
+
+
+/* FORM */
+
+.contact-form {
+    background: #faf8f4;
+    padding: 45px;
+    border: 1px solid #e3dbd0;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 9px;
+    font-size: 13px;
+    color: #554c43;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #d8cec2;
+    background: #faf8f4;
+    color: #4b4239;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #9a8065;
+}
+
+.contact-form .btn {
+    cursor: pointer;
+    width: 100%;
+}
+
+
+/* CONTACT - MOBILE */
+
+@media (max-width: 768px) {
+
+    .contact {
+        padding: 75px 30px;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .contact-form {
+        padding: 30px;
+    }
+
+}

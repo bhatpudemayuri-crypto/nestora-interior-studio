@@ -1,0 +1,379 @@
+/* ================================
+   NESTORA INTERIOR DESIGN STUDIO
+   Main Website Styles
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #faf8f4;
+    color: #3f3a34;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   NAVIGATION
+================================ */
+
+header {
+    background: #faf8f4;
+    border-bottom: 1px solid #e8e1d8;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 22px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    color: #5b5147;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #5d554d;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #9a8065;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(
+            rgba(250, 248, 244, 0.72),
+            rgba(250, 248, 244, 0.72)
+        ),
+        url("images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 80px 30px;
+}
+
+.small-heading {
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: #9a8065;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(48px, 7vw, 82px);
+    font-weight: 400;
+    line-height: 1.05;
+    color: #443c34;
+    margin-bottom: 28px;
+}
+
+.hero p:not(.small-heading) {
+    max-width: 540px;
+    font-size: 17px;
+    color: #6b6259;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #7e6b58;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid #7e6b58;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #5e5042;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background: transparent;
+    color: #66584b;
+}
+
+.secondary-btn:hover {
+    color: white;
+}
+
+
+/* ================================
+   COMMON SECTION
+================================ */
+
+.about,
+.services,
+.projects,
+.contact {
+    max-width: 1200px;
+    margin: auto;
+    padding: 110px 30px;
+}
+
+.section-label {
+    color: #9a8065;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+section h2 {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.15;
+    color: #443c34;
+}
+
+
+/* ================================
+   ABOUT
+================================ */
+
+.about {
+    max-width: 900px;
+}
+
+.about > p:last-child {
+    max-width: 700px;
+    margin-top: 28px;
+    font-size: 17px;
+    color: #6b6259;
+}
+
+
+/* ================================
+   SERVICES
+================================ */
+
+.services {
+    background: #f2ede5;
+    max-width: none;
+    padding-left: max(30px, calc((100% - 1140px) / 2));
+    padding-right: max(30px, calc((100% - 1140px) / 2));
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background: #faf8f4;
+    padding: 38px;
+    min-height: 230px;
+    border: 1px solid #e6ded4;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(80, 65, 50, 0.08);
+}
+
+.service-card h3 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #4b4239;
+    margin-bottom: 18px;
+}
+
+.service-card p {
+    color: #70675e;
+    font-size: 15px;
+}
+
+
+/* ================================
+   PROJECTS
+================================ */
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.project-card {
+    overflow: hidden;
+}
+
+.project-image {
+    height: 360px;
+    background:
+        linear-gradient(
+            rgba(70, 60, 50, 0.12),
+            rgba(70, 60, 50, 0.12)
+        ),
+        url("images/project.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: flex-end;
+    padding: 25px;
+    transition: 0.4s;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.02);
+}
+
+.project-image span {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 15px;
+    font-size: 13px;
+}
+
+.project-card h3 {
+    margin-top: 17px;
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.project-card p {
+    color: #8a8077;
+    font-size: 14px;
+}
+
+
+/* ================================
+   CONTACT
+================================ */
+
+.contact {
+    text-align: center;
+    max-width: 900px;
+}
+
+.contact p:not(.section-label) {
+    color: #70675e;
+    margin: 20px auto 30px;
+}
+
+.contact .btn {
+    margin-top: 10px;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    background: #453d35;
+    color: #eee8df;
+    text-align: center;
+    padding: 45px 25px;
+}
+
+footer .logo {
+    color: #f4eee6;
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 13px;
+    color: #cfc5b9;
+}
+
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 80vh;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .service-container,
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about,
+    .services,
+    .projects,
+    .contact {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .project-image {
+        height: 300px;
+    }
+}

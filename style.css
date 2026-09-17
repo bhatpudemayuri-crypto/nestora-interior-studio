@@ -254,21 +254,47 @@ section h2 {
 }
 
 .project-image {
+    .project-image {
     height: 360px;
-    background:
-        linear-gradient(
-            rgba(70, 60, 50, 0.12),
-            rgba(70, 60, 50, 0.12)
-        ),
-        url("images/project.jpg");
-
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 
     display: flex;
     align-items: flex-end;
     padding: 25px;
     transition: 0.4s;
+}
+
+/* Modern Residence */
+.project-one {
+    background-image:
+        linear-gradient(
+            rgba(70, 60, 50, 0.12),
+            rgba(70, 60, 50, 0.12)
+        ),
+        url("https://image.makewebeasy.net/makeweb/0/Ewl7EdAVj/DefaultData/18430.jpg");
+}
+
+/* Urban Cafe */
+.project-two {
+    background-image:
+        linear-gradient(
+            rgba(70, 60, 50, 0.12),
+            rgba(70, 60, 50, 0.12)
+        ),
+        url("https://www.pinterest.com/pin/1337074887907541/");
+}
+
+/* Minimal Home */
+.project-three {
+    background-image:
+        linear-gradient(
+            rgba(70, 60, 50, 0.12),
+            rgba(70, 60, 50, 0.12)
+        ),
+        url("https://coohom-biz-sg-s3.coohom.com/ins/static/case/casa-80m2-area-social-integrada-1776853666629820300.jpg?processFlag=true&x-oss-process=image%2Fformat%2Cwebp");
+}
 }
 
 .project-card:hover .project-image {

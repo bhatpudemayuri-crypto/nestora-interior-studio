@@ -872,4 +872,41 @@ footer {
     z-index: 10001;
     pointer-events: auto;
 }
+/* SERVICES DROPDOWN */
 
+.services-dropdown {
+    position: relative;
+}
+
+.services-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
+    background: #fff;
+    padding: 12px 0;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    z-index: 1000;
+}
+
+.services-dropdown:hover .services-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.services-menu a {
+    display: block;
+    padding: 12px 20px;
+    color: #66584b;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.services-menu a:hover {
+    background: #f3eee8;
+}

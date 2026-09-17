@@ -860,3 +860,14 @@ footer {
     background: #333;
     color: white;
 }
+.popup-box {
+    position: relative;
+    z-index: 10000;
+    pointer-events: auto;
+}
+
+.popup-close {
+    position: relative;
+    z-index: 10001;
+    pointer-events: auto;
+}

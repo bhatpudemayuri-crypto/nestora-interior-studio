@@ -381,7 +381,10 @@ footer p {
    WHY CHOOSE NESTORA
 ================================ */
 
-.why-nestora {
+.why-nestora {background-image: url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=85");
+background-size: cover;
+background-position: center;
+              
     background: #ebe4da;
     padding: 110px 30px;
 }

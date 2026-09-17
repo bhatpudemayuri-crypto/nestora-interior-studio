@@ -64,6 +64,57 @@ header {
 
 .nav-links a:hover {
     color: #9a8065;
+   
+   /* SERVICES DROPDOWN */
+
+.nav-links > .services-dropdown {
+    position: relative;
+}
+
+.nav-links > .services-dropdown > .services-menu {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-5px);
+    width: 210px;
+    background: #faf8f4;
+    border: 1px solid #e8e1d8;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(70, 60, 50, 0.12);
+    padding: 7px 0;
+    margin: 0;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+}
+
+.nav-links > .services-dropdown:hover > .services-menu,
+.nav-links > .services-dropdown:focus-within > .services-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+}
+
+.nav-links > .services-dropdown > .services-menu > li {
+    display: block;
+    width: 100%;
+}
+
+.nav-links > .services-dropdown > .services-menu > li > a {
+    display: block;
+    padding: 11px 17px;
+    font-size: 13px;
+    color: #5d554d;
+    white-space: nowrap;
+}
+
+.nav-links > .services-dropdown > .services-menu > li > a:hover {
+    background: #f1ece5;
+    color: #9a8065;
+}
 }
 
 

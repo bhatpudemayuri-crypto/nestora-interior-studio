@@ -16,10 +16,8 @@ if (contactForm) {
         }
 
         const popup = document.querySelector(".success-popup");
-        const popupName = document.querySelector(".popup-name");
 
-        popupName.textContent = name;
-        popup.classList.add("show");
+popup.classList.add("show");
 
         contactForm.reset();
 

@@ -1,8 +1,4 @@
-// ================================
 // NESTORA WEBSITE JAVASCRIPT
-// ================================
-
-// Consultation form interaction
 
 const contactForm = document.querySelector(".contact-form");
 
@@ -19,13 +15,18 @@ if (contactForm) {
             return;
         }
 
-        alert(
-            "Thank you, " + name +
-            "! Your consultation request has been received."
-        );
+        const popup = document.querySelector(".success-popup");
+        const popupName = document.querySelector(".popup-name");
+
+        popupName.textContent = name;
+        popup.classList.add("show");
 
         contactForm.reset();
 
     });
 
+}
+
+function closePopup() {
+    document.querySelector(".success-popup").classList.remove("show");
 }

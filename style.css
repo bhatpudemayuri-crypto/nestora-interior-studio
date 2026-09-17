@@ -872,3 +872,22 @@ footer {
     z-index: 10001;
     pointer-events: auto;
 }
+.why-nestora {
+    position: relative;
+    background-image: url("https://images.unsplash.com/photo-1600607684567-4e2e6f9f4f4e?auto=format&fit=crop&w=2000&q=85") !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.why-nestora::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.65);
+    z-index: 0;
+}
+
+.why-nestora > * {
+    position: relative;
+    z-index: 1;
+}

@@ -1,35 +1,28 @@
 // NESTORA WEBSITE JAVASCRIPT
 
-document.addEventListener("DOMContentLoaded", function () {
+function showPopup(event) {
 
-    const contactForm = document.querySelector(".contact-form");
+    event.preventDefault();
+
     const popup = document.querySelector(".success-popup");
 
-    if (contactForm && popup) {
-
-        contactForm.addEventListener("submit", function (event) {
-
-            event.preventDefault();
-
-            const name = document.querySelector("#name");
-
-            if (name && name.value.trim() === "") {
-                alert("Please enter your name.");
-                return;
-            }
-
-            popup.classList.add("show");
-
-            contactForm.reset();
-        });
+    if (popup) {
+        popup.classList.add("show");
     }
 
-});
+    const form = document.querySelector(".contact-form");
+
+    if (form) {
+        form.reset();
+    }
+}
 
 function closePopup() {
+
     const popup = document.querySelector(".success-popup");
 
     if (popup) {
         popup.classList.remove("show");
     }
 }
+

@@ -245,6 +245,8 @@ section h2 {
 .projects {
     background: #ffffff;
     max-width: none;
+    width: 100%;
+    margin: 0;
     padding-left: max(30px, calc((100% - 1140px) / 2));
     padding-right: max(30px, calc((100% - 1140px) / 2));
 }

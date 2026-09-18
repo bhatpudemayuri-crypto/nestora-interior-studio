@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color & Material Consultation | Nestora</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f0e9;
+            color: #4f463e;
+        }
+
+        .service-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 70px 8%;
+        }
+
+        .service-content {
+            width: 50%;
+            padding-right: 70px;
+        }
+
+        .small-title {
+            font-size: 13px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #8a7764;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-size: 52px;
+            font-weight: 500;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            color: #40372f;
+        }
+
+        .service-content p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #6b6259;
+            margin-bottom: 25px;
+        }
+
+        .features {
+            margin: 25px 0 35px;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .features li {
+            margin-bottom: 13px;
+            font-size: 15px;
+        }
+
+        .features li::before {
+            content: "— ";
+            color: #8a7764;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 13px 24px;
+            border: 1px solid #7e6b58;
+            color: #66584b;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .service-image {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .service-image img {
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .service-page {
+                flex-direction: column;
+                padding: 50px 25px;
+            }
+
+            .service-content {
+                width: 100%;
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .service-image {
+                width: 100%;
+            }
+
+            .service-image img {
+                width: 100%;
+                height: 360px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="service-page">
+
+        <div class="service-content">
+
+            <div class="small-title">Nestora Interiors</div>
+
+            <h1>Color & Material Consultation</h1>
+
+            <p>
+                The right combination of colours and materials can completely
+                transform the personality of an interior. At Nestora, we help
+                create thoughtful colour palettes and material combinations
+                that bring harmony, warmth, and character to every space.
+                We carefully consider the size of the room, natural lighting,
+                furniture, existing elements, textures, and the overall mood
+                that the space should create before selecting the final palette.
+            </p>
+
+            <p>
+                From soft neutral tones and natural textures to deeper shades
+                and refined finishes, every choice is made with the complete
+                interior in mind. We guide you through materials such as wood,
+                stone, fabrics, tiles, wall finishes, and decorative surfaces,
+                ensuring that each element works together beautifully. Our
+                approach creates interiors that feel cohesive, timeless, and
+                personal rather than simply following temporary trends.
+            </p>
+
+            <ul class="features">
+                <li>Personalised colour palette selection</li>
+                <li>Material and texture coordination</li>
+                <li>Wall, flooring and surface finish guidance</li>
+                <li>Balanced and timeless interior combinations</li>
+            </ul>
+
+            <a href="index.html" class="back-btn">← Back to Nestora</a>
+
+        </div>
+
+        <div class="service-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=85"
+                alt="Color and Material Interior Design">
+
+        </div>
+
+    </main>
+
+</body>
+</html>

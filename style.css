@@ -247,8 +247,7 @@ section h2 {
     max-width: none;
     width: 100%;
     margin: 0;
-    padding-left: max(30px, calc((100% - 1140px) / 2));
-    padding-right: max(30px, calc((100% - 1140px) / 2));
+    padding: 110px max(30px, calc((100% - 1140px) / 2));
 }
 .project-container {
     display: grid;

@@ -203,6 +203,9 @@ section h2 {
     padding-left: max(30px, calc((100% - 1140px) / 2));
     padding-right: max(30px, calc((100% - 1140px) / 2));
 }
+.services {
+   margin-bottom: 25px;
+}
 
 .service-container {
     display: grid;

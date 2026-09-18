@@ -813,7 +813,10 @@ footer {
 }
 /* Featured Projects full-width background */
 section.projects {
-    background: #ffffff !important;
+    background: #F7F3ED !important;
     max-width: 100% !important;
     width: 100% !important;
+}
+.projects {
+    background: #F7F3ED !important;
 }

@@ -242,7 +242,12 @@ section h2 {
 /* ================================
    PROJECTS
 ================================ */
-
+.projects {
+    background: #faf8f4;
+    max-width: none;
+    padding-left: max(30px, calc((100% - 1140px) / 2));
+    padding-right: max(30px, calc((100% - 1140px) / 2));
+}
 .project-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -445,9 +450,10 @@ section h2 {
 ================================ */
 
 .process {
-    max-width: 1200px;
+    max-width: none;
     margin: auto;
-    padding: 110px 30px;
+    padding: 110px max(30px, calc((100% - 1140px) / 2));
+    background: #faf8f4;
 }
 
 .process-header {

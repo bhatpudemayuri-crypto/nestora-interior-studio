@@ -367,6 +367,9 @@ section h2 {
 .why-nestora {
     background: #faf8f4;
     padding: 110px 30px;
+    width: 100%;
+    max-width: none;
+}
 }
 .why-content {
     max-width: 1140px;

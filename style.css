@@ -365,11 +365,8 @@ section h2 {
 ================================ */
 
 .why-nestora {
-    background: linear-gradient(rgba(235, 228, 218, 0.78), rgba(235, 228, 218, 0.78)), url("https://images.unsplash.com/photo-1600607687920-4e2e6f9f4f4e?auto=format&fit=crop&w=2000&q=85");
-    background-size: cover;
-    background-position: center;
-    padding: 110px 30px;
-}
+   background: #faf8f4;
+   padding: 110px 30px;
 }
 .why-content {
     max-width: 1140px;

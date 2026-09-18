@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lighting Design | Nestora</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f0e9;
+            color: #4f463e;
+        }
+
+        .service-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 70px 8%;
+        }
+
+        .service-content {
+            width: 50%;
+            padding-right: 70px;
+        }
+
+        .small-title {
+            font-size: 13px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #8a7764;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-size: 52px;
+            font-weight: 500;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            color: #40372f;
+        }
+
+        .service-content p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #6b6259;
+            margin-bottom: 25px;
+        }
+
+        .features {
+            margin: 25px 0 35px;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .features li {
+            margin-bottom: 13px;
+            font-size: 15px;
+        }
+
+        .features li::before {
+            content: "— ";
+            color: #8a7764;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 13px 24px;
+            border: 1px solid #7e6b58;
+            color: #66584b;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .service-image {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .service-image img {
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .service-page {
+                flex-direction: column;
+                padding: 50px 25px;
+            }
+
+            .service-content {
+                width: 100%;
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .service-image {
+                width: 100%;
+            }
+
+            .service-image img {
+                width: 100%;
+                height: 360px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="service-page">
+
+        <div class="service-content">
+
+            <div class="small-title">Nestora Interiors</div>
+
+            <h1>Lighting Design</h1>
+
+            <p>
+                Lighting plays an important role in defining the atmosphere,
+                comfort, and character of an interior. At Nestora, we carefully
+                plan lighting solutions that work beautifully with the overall
+                design of a space. We consider natural light, room proportions,
+                furniture placement, colours, materials, and the everyday
+                activities of the people using the space. Our goal is to create
+                lighting that feels warm, balanced, practical, and visually
+                comfortable throughout the day.
+            </p>
+
+            <p>
+                From soft ambient lighting that creates a calm and welcoming
+                mood to focused lighting that highlights artwork, textures,
+                furniture, and architectural details, every element is planned
+                with purpose. We create lighting schemes that not only make a
+                room functional but also enhance its beauty and personality.
+                Whether it is a peaceful bedroom, an elegant living room,
+                a productive workspace, or a sophisticated commercial interior,
+                the right lighting helps bring the entire design together.
+            </p>
+
+            <ul class="features">
+                <li>Warm and balanced ambient lighting</li>
+                <li>Focused accent lighting for interiors</li>
+                <li>Functional lighting for everyday activities</li>
+                <li>Lighting plans based on space and natural light</li>
+            </ul>
+
+            <a href="index.html" class="back-btn">← Back to Nestora</a>
+
+        </div>
+
+        <div class="service-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85"
+                alt="Lighting Design Interior">
+
+        </div>
+
+    </main>
+
+</body>
+</html>

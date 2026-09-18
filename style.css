@@ -243,7 +243,7 @@ section h2 {
    PROJECTS
 ================================ */
 .projects {
-    background: #faf8f4;
+    background: #f2ede5;
     max-width: none;
     padding-left: max(30px, calc((100% - 1140px) / 2));
     padding-right: max(30px, calc((100% - 1140px) / 2));

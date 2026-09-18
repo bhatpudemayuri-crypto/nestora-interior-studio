@@ -248,6 +248,7 @@ section h2 {
     width: 100%;
     margin: 0;
     padding: 110px max(30px, calc((100% - 1140px) / 2));
+    padding-top: 140px;
 }
 .project-container {
     display: grid;

@@ -811,3 +811,9 @@ footer {
     z-index: 10001;
     pointer-events: auto;
 }
+/* Featured Projects full-width background */
+section.projects {
+    background: #ffffff !important;
+    max-width: 100% !important;
+    width: 100% !important;
+}

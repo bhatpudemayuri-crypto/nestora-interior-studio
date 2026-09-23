@@ -1426,3 +1426,15 @@ section.projects {
     }
 
 }
+/* Make Book a Consultation match Explore Our Work */
+.hero-buttons .secondary-btn {
+    background: #7e6b58 !important;
+    color: #ffffff !important;
+    border: 1px solid #7e6b58 !important;
+}
+
+.hero-buttons .secondary-btn:hover {
+    background: #5e5042 !important;
+    color: #ffffff !important;
+    border-color: #5e5042 !important;
+}

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project Inquiry | Nestora</title>
+
+    <meta name="description" content="Start your interior design project with Nestora.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                NESTORA
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Inquiry Page -->
+    <main>
+
+        <section class="inquiry-section">
+
+            <div class="inquiry-container">
+
+                <!-- Heading -->
+                <div class="inquiry-header">
+
+                    <p class="section-label">
+                        START A PROJECT
+                    </p>
+
+                    <h1>Tell Us About Your Space.</h1>
+
+                    <p>
+                        Share a few details about your project.
+                        Our team will review your requirements and
+                        get in touch with you.
+                    </p>
+
+                </div>
+
+
+                <!-- Inquiry Form -->
+                <form
+                    id="inquiryForm"
+                    class="inquiry-form"
+                >
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="inquiryName">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="inquiryName"
+                                placeholder="Enter your full name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="inquiryEmail">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="inquiryEmail"
+                                placeholder="Enter your email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="inquiryPhone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="inquiryPhone"
+                                placeholder="Enter your phone number"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="inquiryService">
+                                Service Required
+                            </label>
+
+                            <select
+                                id="inquiryService"
+                                required
+                            >
+
+                                <option value="">
+                                    Select a service
+                                </option>
+
+                                <option value="Residential Interior Design">
+                                    Residential Interior Design
+                                </option>
+
+                                <option value="Commercial Interior Design">
+                                    Commercial Interior Design
+                                </option>
+
+                                <option value="Space Planning">
+                                    Space Planning
+                                </option>
+
+                                <option value="Lighting Design">
+                                    Lighting Design
+                                </option>
+
+                                <option value="Colour & Material Consultation">
+                                    Colour & Material Consultation
+                                </option>
+
+                                <option value="Furniture & Styling">
+                                    Furniture & Styling
+                                </option>
+
+                                <option value="Design Consultation">
+                                    Design Consultation
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="projectType">
+                                Project Type
+                            </label>
+
+                            <select
+                                id="projectType"
+                                required
+                            >
+
+                                <option value="">
+                                    Select project type
+                                </option>
+
+                                <option value="New Home">
+                                    New Home
+                                </option>
+
+                                <option value="Renovation">
+                                    Renovation
+                                </option>
+
+                                <option value="Apartment">
+                                    Apartment
+                                </option>
+
+                                <option value="Villa">
+                                    Villa
+                                </option>
+
+                                <option value="Office">
+                                    Office
+                                </option>
+
+                                <option value="Cafe / Restaurant">
+                                    Cafe / Restaurant
+                                </option>
+
+                                <option value="Retail Space">
+                                    Retail Space
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="budget">
+                                Estimated Budget
+                            </label>
+
+                            <select
+                                id="budget"
+                                required
+                            >
+
+                                <option value="">
+                                    Select your budget
+                                </option>
+
+                                <option value="Below ₹5 Lakhs">
+                                    Below ₹5 Lakhs
+                                </option>
+
+                                <option value="₹5 – ₹10 Lakhs">
+                                    ₹5 – ₹10 Lakhs
+                                </option>
+
+                                <option value="₹10 – ₹20 Lakhs">
+                                    ₹10 – ₹20 Lakhs
+                                </option>
+
+                                <option value="₹20 – ₹50 Lakhs">
+                                    ₹20 – ₹50 Lakhs
+                                </option>
+
+                                <option value="Above ₹50 Lakhs">
+                                    Above ₹50 Lakhs
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="projectLocation">
+                            Project Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="projectLocation"
+                            placeholder="City / Location"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="inquiryMessage">
+                            Tell Us About Your Project
+                        </label>
+
+                        <textarea
+                            id="inquiryMessage"
+                            rows="6"
+                            placeholder="Tell us about your space, requirements, preferred style and anything else you would like us to know..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn"
+                    >
+                        Submit Inquiry
+                    </button>
+
+
+                    <p
+                        id="inquiryMessageStatus"
+                        class="auth-message"
+                    ></p>
+
+                </form>
+
+
+                <div class="auth-back">
+
+                    <a href="index.html">
+                        ← Back to Nestora
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Success Popup -->
+    <div
+        class="success-popup"
+        id="inquirySuccessPopup"
+    >
+
+        <div class="popup-box">
+
+            <h2>Thank You!</h2>
+
+            <p>
+                Your project inquiry has been submitted successfully.
+            </p>
+
+            <p>
+                Our Nestora team will review your requirements
+                and contact you shortly.
+            </p>
+
+            <button
+                class="popup-close"
+                type="button"
+                onclick="document.getElementById('inquirySuccessPopup').classList.remove('show')"
+            >
+                Close
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.JS"></script>
+
+</body>
+</html>

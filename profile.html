@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile | Nestora</title>
+
+    <meta name="description" content="Manage your Nestora profile and inquiries.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                NESTORA
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Profile -->
+    <main>
+
+        <section class="profile-section">
+
+            <div class="profile-container">
+
+                <div class="profile-header">
+
+                    <p class="section-label">
+                        MY NESTORA
+                    </p>
+
+                    <h1>Welcome, <span id="profileName">Guest</span>.</h1>
+
+                    <p>
+                        Manage your account and keep track of your
+                        interior design inquiries.
+                    </p>
+
+                </div>
+
+
+                <!-- Account Information -->
+                <div class="profile-card">
+
+                    <div class="profile-card-heading">
+                        <p class="section-label">
+                            ACCOUNT
+                        </p>
+
+                        <h2>Personal Information</h2>
+                    </div>
+
+
+                    <div class="profile-details">
+
+                        <div class="profile-detail">
+                            <span>FULL NAME</span>
+                            <p id="profileFullName">Guest</p>
+                        </div>
+
+
+                        <div class="profile-detail">
+                            <span>EMAIL ADDRESS</span>
+                            <p id="profileEmail">Not available</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Inquiry Section -->
+                <div class="profile-card">
+
+                    <div class="profile-card-heading">
+
+                        <p class="section-label">
+                            YOUR PROJECTS
+                        </p>
+
+                        <h2>My Inquiries</h2>
+
+                        <p>
+                            View your consultation requests and
+                            project inquiries.
+                        </p>
+
+                    </div>
+
+
+                    <div id="inquiryHistory" class="inquiry-history">
+
+                        <div class="empty-inquiry">
+
+                            <h3>No inquiries yet.</h3>
+
+                            <p>
+                                Your submitted project inquiries
+                                will appear here.
+                            </p>
+
+                            <a
+                                href="inquiry.html"
+                                class="btn"
+                            >
+                                Start an Inquiry
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Profile Actions -->
+                <div class="profile-actions">
+
+                    <a
+                        href="inquiry.html"
+                        class="btn"
+                    >
+                        Make an Inquiry
+                    </a>
+
+                    <button
+                        type="button"
+                        class="btn secondary-btn"
+                        id="logoutBtn"
+                    >
+                        Logout
+                    </button>
+
+                </div>
+
+
+                <div class="auth-back">
+
+                    <a href="index.html">
+                        ← Back to Nestora
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="script.JS"></script>
+
+</body>
+</html>

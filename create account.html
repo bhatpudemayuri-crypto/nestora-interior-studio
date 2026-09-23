@@ -6,170 +6,366 @@
 
     <title>Create Account | Nestora</title>
 
-    <meta name="description" content="Create your Nestora account.">
-
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .create-account-page {
+            min-height: calc(100vh - 90px);
+            padding: 80px 25px;
+            background: #faf8f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pageEnter 0.8s ease both;
+        }
+
+        @keyframes pageEnter {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .create-account-box {
+            width: 100%;
+            max-width: 560px;
+            background: #ffffff;
+            border: 1px solid #e3dbd0;
+            padding: 45px;
+            box-shadow: 0 20px 50px rgba(80, 65, 50, 0.08);
+            animation: boxEnter 0.9s ease 0.15s both;
+        }
+
+        @keyframes boxEnter {
+            from {
+                opacity: 0;
+                transform: translateY(25px) scale(0.97);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .create-heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .create-heading h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(40px, 6vw, 58px);
+            font-weight: 400;
+            color: #443c34;
+            margin-bottom: 12px;
+        }
+
+        .create-heading p {
+            color: #70675e;
+            font-size: 15px;
+        }
+
+        .create-group {
+            margin-bottom: 20px;
+        }
+
+        .create-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #4b4239;
+            font-size: 13px;
+        }
+
+        .create-group input {
+            width: 100%;
+            padding: 14px 15px;
+            border: 1px solid #d8cec2;
+            background: #faf8f4;
+            font-size: 15px;
+            outline: none;
+            box-sizing: border-box;
+            transition: 0.3s;
+        }
+
+        .create-group input:focus {
+            border-color: #9a8065;
+            box-shadow: 0 0 0 3px rgba(154, 128, 101, 0.08);
+        }
+
+        .create-button {
+            width: 100%;
+            margin-top: 8px;
+            cursor: pointer;
+        }
+
+        .create-message {
+            min-height: 22px;
+            text-align: center;
+            margin-top: 18px;
+            font-size: 14px;
+        }
+
+        .login-text {
+            text-align: center;
+            margin-top: 28px;
+            color: #70675e;
+            font-size: 14px;
+        }
+
+        .login-text a,
+        .back-nestora a {
+            color: #8a7764;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .login-text a:hover,
+        .back-nestora a:hover {
+            color: #5e5042;
+        }
+
+        .back-nestora {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .back-nestora a {
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        @media (max-width: 600px) {
+            .create-account-page {
+                padding: 60px 20px;
+            }
+
+            .create-account-box {
+                padding: 30px 25px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
+    <main class="create-account-page">
 
-            <div class="logo">
-                NESTORA
+        <div class="create-account-box">
+
+            <div class="create-heading">
+
+                <h1>Create Account</h1>
+
+                <p>
+                    Create your Nestora account to get started.
+                </p>
+
             </div>
 
-            <ul class="nav-links">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
 
-        </nav>
-    </header>
+            <form id="createAccountForm">
 
+                <div class="create-group">
 
-    <!-- Create Account Section -->
-    <main>
+                    <label for="fullName">
+                        Full Name
+                    </label>
 
-        <section class="auth-section">
-
-            <div class="auth-container">
-
-                <div class="auth-heading">
-
-                    <p class="section-label">
-                        WELCOME TO NESTORA
-                    </p>
-
-                    <h1>Create Your Account.</h1>
-
-                    <p>
-                        Create your Nestora account to manage your
-                        inquiries and keep track of your design journey.
-                    </p>
-
-                </div>
-
-
-                <form id="createAccountForm" class="auth-form">
-
-                    <div class="form-group">
-
-                        <label for="signupName">
-                            Full Name
-                        </label>
-
-                        <input
-                            type="text"
-                            id="signupName"
-                            placeholder="Enter your full name"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="signupEmail">
-                            Email Address
-                        </label>
-
-                        <input
-                            type="email"
-                            id="signupEmail"
-                            placeholder="Enter your email"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="signupPassword">
-                            Password
-                        </label>
-
-                        <input
-                            type="password"
-                            id="signupPassword"
-                            placeholder="Create a password"
-                            minlength="6"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="confirmPassword">
-                            Confirm Password
-                        </label>
-
-                        <input
-                            type="password"
-                            id="confirmPassword"
-                            placeholder="Confirm your password"
-                            minlength="6"
-                            required
-                        >
-
-                    </div>
-
-
-                    <button
-                        type="submit"
-                        class="btn auth-btn"
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="Enter your full name"
+                        required
                     >
-                        Create Account
-                    </button>
-
-
-                    <p
-                        id="signupMessage"
-                        class="auth-message"
-                    ></p>
-
-                </form>
-
-
-                <div class="auth-create">
-
-                    <p>
-                        Already have an account?
-                    </p>
-
-                    <a href="login.html">
-                        Login
-                    </a>
 
                 </div>
 
 
-                <div class="auth-back">
+                <div class="create-group">
 
-                    <a href="index.html">
-                        ← Back to Nestora
-                    </a>
+                    <label for="createEmail">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="createEmail"
+                        placeholder="Enter your email"
+                        required
+                    >
 
                 </div>
+
+
+                <div class="create-group">
+
+                    <label for="createMobile">
+                        Mobile Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="createMobile"
+                        placeholder="Enter your mobile number"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="create-group">
+
+                    <label for="createPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="createPassword"
+                        placeholder="Create a password"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="create-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm your password"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn create-button"
+                >
+                    Create Account
+                </button>
+
+
+                <div
+                    id="createMessage"
+                    class="create-message"
+                ></div>
+
+            </form>
+
+
+            <div class="login-text">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Sign In
+                </a>
 
             </div>
 
-        </section>
+
+            <div class="back-nestora">
+
+                <a href="index.html">
+                    ← Back to Nestora
+                </a>
+
+            </div>
+
+        </div>
 
     </main>
 
 
-    <!-- JavaScript -->
-    <script src="script.JS"></script>
+    <script>
+
+        const createForm =
+            document.getElementById("createAccountForm");
+
+
+        createForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+
+            const name =
+                document.getElementById("fullName").value.trim();
+
+            const email =
+                document.getElementById("createEmail").value.trim();
+
+            const mobile =
+                document.getElementById("createMobile").value.trim();
+
+            const password =
+                document.getElementById("createPassword").value;
+
+            const confirmPassword =
+                document.getElementById("confirmPassword").value;
+
+            const message =
+                document.getElementById("createMessage");
+
+
+            if (password !== confirmPassword) {
+
+                message.textContent =
+                    "Passwords do not match.";
+
+                message.style.color = "#9a5f5f";
+
+                return;
+            }
+
+
+            const account = {
+
+                name: name,
+
+                email: email,
+
+                mobile: mobile,
+
+                password: password
+
+            };
+
+
+            localStorage.setItem(
+                "nestoraAccount",
+                JSON.stringify(account)
+            );
+
+
+            message.textContent =
+                "Account created successfully!";
+
+            message.style.color = "#7e6b58";
+
+
+            setTimeout(function() {
+
+                window.location.href = "login.html";
+
+            }, 1200);
+
+        });
+
+    </script>
 
 </body>
 </html>

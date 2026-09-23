@@ -146,11 +146,13 @@ header {
 }
 
 .secondary-btn {
-    background: transparent;
-    color: #66584b;
+    background: #7e6b58t;
+    color: white;
+    border: 1px solid #7e6b58;
 }
 
 .secondary-btn:hover {
+   background: #5e5042;
     color: white;
    
 }

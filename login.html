@@ -4,123 +4,395 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Login | Nestora</title>
-
-    <meta name="description" content="Login to your Nestora account.">
+    <title>Sign In | Nestora</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* LOGIN PAGE ANIMATION */
+
+        .login-page {
+            min-height: calc(100vh - 90px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 25px;
+            background: #faf8f4;
+        }
+
+        .login-box {
+            width: 100%;
+            max-width: 520px;
+            background: #ffffff;
+            border: 1px solid #e3dbd0;
+            padding: 45px;
+            box-shadow: 0 20px 50px rgba(80, 65, 50, 0.08);
+
+            animation: loginBoxIn 0.8s ease both;
+        }
+
+        @keyframes loginBoxIn {
+            from {
+                opacity: 0;
+                transform: translateY(35px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .login-heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .login-heading h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(40px, 6vw, 58px);
+            font-weight: 400;
+            color: #443c34;
+            margin-bottom: 12px;
+        }
+
+        .login-heading p {
+            color: #70675e;
+            font-size: 15px;
+        }
+
+        .login-form-group {
+            margin-bottom: 22px;
+        }
+
+        .login-form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #4b4239;
+            font-size: 13px;
+        }
+
+        .login-form-group input {
+            width: 100%;
+            padding: 14px 15px;
+            border: 1px solid #d8cec2;
+            background: #faf8f4;
+            font-size: 15px;
+            outline: none;
+            box-sizing: border-box;
+            transition: 0.3s;
+        }
+
+        .login-form-group input:focus {
+            border-color: #9a8065;
+            box-shadow: 0 0 0 3px rgba(154, 128, 101, 0.08);
+        }
+
+        .login-button {
+            width: 100%;
+            margin-top: 8px;
+            cursor: pointer;
+        }
+
+        .login-message {
+            min-height: 22px;
+            text-align: center;
+            margin-top: 18px;
+            font-size: 14px;
+        }
+
+        .create-account-text {
+            text-align: center;
+            margin-top: 28px;
+            color: #70675e;
+            font-size: 14px;
+        }
+
+        .create-account-text a {
+            color: #8a7764;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .create-account-text a:hover {
+            color: #5e5042;
+        }
+
+        .back-home {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .back-home a {
+            color: #8a7764;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* SUCCESS WELCOME MESSAGE */
+
+        .welcome-message {
+            position: fixed;
+            inset: 0;
+            background: rgba(45, 38, 32, 0.35);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            opacity: 0;
+            visibility: hidden;
+
+            transition: 0.4s ease;
+            z-index: 9999;
+        }
+
+        .welcome-message.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .welcome-card {
+            background: #ffffff;
+            padding: 45px 55px;
+            text-align: center;
+            max-width: 420px;
+            width: calc(100% - 50px);
+            box-shadow: 0 20px 60px rgba(50, 40, 30, 0.15);
+
+            transform: translateY(25px) scale(0.96);
+            transition: 0.5s ease;
+        }
+
+        .welcome-message.show .welcome-card {
+            transform: translateY(0) scale(1);
+        }
+
+        .welcome-card h2 {
+            font-family: Georgia, serif;
+            font-size: 36px;
+            font-weight: 400;
+            color: #443c34;
+            margin-bottom: 12px;
+        }
+
+        .welcome-card p {
+            color: #70675e;
+            font-size: 15px;
+        }
+
+        @media (max-width: 600px) {
+
+            .login-page {
+                padding: 60px 20px;
+            }
+
+            .login-box {
+                padding: 30px 25px;
+            }
+
+            .welcome-card {
+                padding: 35px 25px;
+            }
+
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
+    <main class="login-page">
 
-            <div class="logo">
-                NESTORA
-            </div>
+        <div class="login-box">
 
-            <ul class="nav-links">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
+            <div class="login-heading">
 
-        </nav>
-    </header>
+                <h1>Sign In</h1>
 
-
-    <!-- Login Section -->
-    <main>
-
-        <section class="auth-section">
-
-            <div class="auth-container">
-
-                <div class="auth-heading">
-                    <p class="section-label">WELCOME TO NESTORA</p>
-
-                    <h1>Welcome Back.</h1>
-
-                    <p>
-                        Login to your Nestora account to manage your
-                        inquiries and explore your design journey.
-                    </p>
-                </div>
-
-
-                <form id="loginForm" class="auth-form">
-
-                    <div class="form-group">
-                        <label for="loginEmail">Email Address</label>
-
-                        <input
-                            type="email"
-                            id="loginEmail"
-                            placeholder="Enter your email"
-                            required
-                        >
-                    </div>
-
-
-                    <div class="form-group">
-                        <label for="loginPassword">Password</label>
-
-                        <input
-                            type="password"
-                            id="loginPassword"
-                            placeholder="Enter your password"
-                            required
-                        >
-                    </div>
-
-
-                    <div class="auth-options">
-                        <a href="#" id="forgotPassword">
-                            Forgot Password?
-                        </a>
-                    </div>
-
-
-                    <button type="submit" class="btn auth-btn">
-                        Login
-                    </button>
-
-
-                    <p id="loginMessage" class="auth-message"></p>
-
-                </form>
-
-
-                <div class="auth-create">
-
-                    <p>Don't have an account?</p>
-
-                    <a href="create-account.html">
-                        Create an Account
-                    </a>
-
-                </div>
-
-
-                <div class="auth-back">
-                    <a href="index.html">
-                        ← Back to Nestora
-                    </a>
-                </div>
+                <p>
+                    Sign in to continue to your Nestora account.
+                </p>
 
             </div>
 
-        </section>
+
+            <form id="loginForm">
+
+                <div class="login-form-group">
+
+                    <label for="loginEmail">
+                        Email or Mobile Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="loginEmail"
+                        placeholder="Enter your email or mobile number"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="login-form-group">
+
+                    <label for="loginPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn login-button"
+                >
+                    Sign In
+                </button>
+
+                <div
+                    id="loginMessage"
+                    class="login-message"
+                ></div>
+
+            </form>
+
+
+            <div class="create-account-text">
+
+                Don't have an account?
+
+                <a href="create-account.html">
+                    Create Account
+                </a>
+
+            </div>
+
+
+            <div class="back-home">
+
+                <a href="index.html">
+                    ← Back to Nestora
+                </a>
+
+            </div>
+
+        </div>
 
     </main>
 
 
-    <!-- Login Script -->
-    <script src="script.JS"></script>
+    <!-- SUCCESS WELCOME -->
+
+    <div
+        id="welcomeMessage"
+        class="welcome-message"
+    >
+
+        <div class="welcome-card">
+
+            <h2>Welcome to Nestora</h2>
+
+            <p>
+                Login successful. Your account is ready.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        const loginForm =
+            document.getElementById("loginForm");
+
+        loginForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const loginValue =
+                document.getElementById("loginEmail").value.trim();
+
+            const password =
+                document.getElementById("loginPassword").value;
+
+            const message =
+                document.getElementById("loginMessage");
+
+            const savedAccount =
+                JSON.parse(
+                    localStorage.getItem("nestoraAccount")
+                );
+
+
+            if (!savedAccount) {
+
+                message.textContent =
+                    "No account found. Please create an account first.";
+
+                message.style.color = "#9a5f5f";
+
+                return;
+            }
+
+
+            const emailMatch =
+                loginValue === savedAccount.email;
+
+            const mobileMatch =
+                loginValue === savedAccount.mobile;
+
+
+            if (
+                (emailMatch || mobileMatch) &&
+                password === savedAccount.password
+            ) {
+
+                localStorage.setItem(
+                    "nestoraLoggedIn",
+                    "true"
+                );
+
+
+                message.textContent =
+                    "Login successful!";
+
+                message.style.color = "#7e6b58";
+
+
+                const welcome =
+                    document.getElementById("welcomeMessage");
+
+                welcome.classList.add("show");
+
+
+                setTimeout(function() {
+
+                    window.location.href =
+                        "profile.html";
+
+                }, 1800);
+
+
+            } else {
+
+                message.textContent =
+                    "Incorrect email/mobile number or password.";
+
+                message.style.color = "#9a5f5f";
+
+            }
+
+        });
+
+    </script>
 
 </body>
 </html>

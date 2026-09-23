@@ -105,17 +105,24 @@ header {
     font-size: clamp(48px, 7vw, 82px);
     font-weight: 400;
     line-height: 1.05;
-    color: #443c34;
+    color: #ffffff;
     margin-bottom: 28px;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
 }
 
 .hero p:not(.small-heading) {
     max-width: 540px;
     font-size: 17px;
-    color: #6b6259;
+    color: #f5f1eb;
     margin-bottom: 35px;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
-
+.small-heading {
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: #e8d2b8;
+    margin-bottom: 22px;
+}
 .hero-buttons {
     display: flex;
     gap: 15px;
